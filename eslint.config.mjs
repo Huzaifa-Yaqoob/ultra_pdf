@@ -1,4 +1,4 @@
-import baseConfig from '@ultra-pdf/eslint_config/base';
+import baseConfig from '@ultra-pdf/eslint-config/base';
 
 export default [
   ...baseConfig,
