@@ -1,0 +1,11 @@
+{
+  "name": "@ultra-pdf/prettier_config",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "main": "index.json",
+  "exports": {
+    ".": "./index.json",
+    "./package.json": "./package.json"
+  }
+}

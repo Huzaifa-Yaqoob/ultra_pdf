@@ -1,0 +1,22 @@
+{
+  "name": "@ultra-pdf/eslint_config",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "main": "./base.mjs",
+  "exports": {
+    ".": "./base.mjs",
+    "./base": "./base.mjs",
+    "./react": "./react.mjs",
+    "./next": "./next.mjs",
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "@nx/eslint-plugin": ">=22",
+    "eslint": ">=9",
+    "eslint-config-next": ">=16",
+    "eslint-plugin-react": ">=7.35",
+    "eslint-plugin-react-hooks": ">=5"
+  }
+}

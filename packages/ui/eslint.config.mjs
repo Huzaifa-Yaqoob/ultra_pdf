@@ -1,7 +1,7 @@
-import baseConfig from '../../eslint.config.mjs';
+import reactConfig from '@ultra-pdf/eslint_config/react';
 
 export default [
-  ...baseConfig,
+  ...reactConfig,
   {
     ignores: ['**/out-tsc'],
   },
