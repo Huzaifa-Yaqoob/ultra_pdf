@@ -10,7 +10,13 @@ export default [
   },
   {
     files: ['**/*.ts', '**/*.tsx', '**/*.jsx'],
-    ...reactHooksPlugin.configs.recommended,
+    plugins: {
+      'react-hooks': reactHooksPlugin,
+    },
+    rules: {
+      'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/exhaustive-deps': 'warn',
+    },
   },
   {
     files: ['**/*.ts', '**/*.tsx', '**/*.jsx'],
