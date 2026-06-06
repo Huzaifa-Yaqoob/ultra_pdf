@@ -1,4 +1,4 @@
-import nextConfig from '@ultra-pdf/eslint_config/next';
+import nextConfig from '@ultra-pdf/eslint-config/next';
 
 export default [
   ...nextConfig,

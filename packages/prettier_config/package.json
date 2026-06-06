@@ -1,11 +1,13 @@
 {
-  "name": "@ultra-pdf/prettier_config",
+  "name": "@ultra-pdf/prettier-config",
   "version": "0.0.1",
   "private": true,
   "license": "MIT",
-  "main": "index.json",
+  "type": "module",
+  "main": "base.mjs",
   "exports": {
-    ".": "./index.json",
+    "./base": "./base.mjs",
+    "./react": "./react.mjs",
     "./package.json": "./package.json"
   }
 }

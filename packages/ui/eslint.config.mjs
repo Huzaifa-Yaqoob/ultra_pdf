@@ -1,4 +1,4 @@
-import reactConfig from '@ultra-pdf/eslint_config/react';
+import reactConfig from '@ultra-pdf/eslint-config/react';
 
 export default [
   ...reactConfig,

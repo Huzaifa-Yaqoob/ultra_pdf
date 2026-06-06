@@ -1,5 +1,5 @@
 {
-  "extends": "@ultra-pdf/typescript_config/tsconfig.lib.json",
+  "extends": "@ultra-pdf/typescript-config/tsconfig.lib.json",
   "compilerOptions": {
     "rootDir": "src",
     "outDir": "dist",
