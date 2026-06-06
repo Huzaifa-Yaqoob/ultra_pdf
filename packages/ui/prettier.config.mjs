@@ -1,1 +1,1 @@
-export { default } from "@ultra-pdf/prettier-config/react.mjs";
+export { default } from "@ultra-pdf/prettier-config/react";
