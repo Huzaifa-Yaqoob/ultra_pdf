@@ -2,12 +2,7 @@
     html {
         @apply no-scrollbar;
     }
-    ::selection {
-        background-color: var(--color-secondary);
-        color: var(--color-background);
-    }
-
-    .h1-style {
+.h1-style {
         font-family: var(--font-heading);
         font-weight: 800;
         line-height: 1;
