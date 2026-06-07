@@ -24,7 +24,8 @@
     "typescript": "^5",
     "@ultra-pdf/prettier-config": "workspace:*",
     "@ultra-pdf/typescript-config": "workspace:*",
-    "@ultra-pdf/eslint-config": "workspace:*"
+    "@ultra-pdf/eslint-config": "workspace:*",
+    "@ultra-pdf/ui": "workspace:*"
   },
   "ignoreScripts": [
     "sharp",
