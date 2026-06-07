@@ -4,6 +4,8 @@
   "private": true,
   "type": "module",
   "main": "./src/style/global.css",
+  "resolvePackageJsonExports": true,
+  "resolvePackageJsonImports": true,
   "exports": {
     ".": {
       "style": "./src/style/global.css",

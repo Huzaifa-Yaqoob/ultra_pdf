@@ -1,8 +1,17 @@
 {
   "extends": "@ultra-pdf/typescript-config/tsconfig.next.json",
   "compilerOptions": {
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@ui/components": ["../../packages/ui/src/components"],
+      "@ui/components/*": ["../../packages/ui/src/components/*"],
+      "@ui/components/ui/*": ["../../packages/ui/src/components/ui/*"],
+      "@ui/lib": ["../../packages/ui/src/lib"],
+      "@ui/lib/*": ["../../packages/ui/src/lib/*"],
+      "@ui/hooks": ["../../packages/ui/src/hooks"],
+      "@ui/hooks/*": ["../../packages/ui/src/hooks/*"],
+      "@ui/lib/utils": ["../../packages/ui/src/lib/utils.ts"]
     }
   },
   "include": [
@@ -11,7 +20,9 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
-    "**/*.mts"
+    "**/*.mts",
+    "../../packages/ui/src/**/*.ts",
+    "../../packages/ui/src/**/*.tsx"
   ],
   "exclude": ["node_modules"],
   "references": [
