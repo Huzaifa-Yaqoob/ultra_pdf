@@ -20,7 +20,8 @@
       "@ui/hooks": ["./src/hooks"],
       "@ui/hooks/*": ["./src/hooks/*"],
       "@ui/lib/utils": ["./src/lib/utils.ts"]
-    }
+    },
+    "lib": ["esnext", "dom", "dom.iterable"]
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],
   "references": [
