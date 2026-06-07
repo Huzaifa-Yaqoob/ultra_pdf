@@ -5,6 +5,7 @@
     "outDir": "dist",
     "tsBuildInfoFile": "dist/tsconfig.lib.tsbuildinfo",
     "types": ["node"],
+    "module": "esnext",
     "moduleResolution": "bundler",
     "jsx": "react-jsx",
     "jsxImportSource": "react"

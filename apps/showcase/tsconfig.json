@@ -17,6 +17,9 @@
   "references": [
     {
       "path": "../../packages/typescript_config"
+    },
+    {
+      "path": "../../packages/ui"
     }
   ]
 }
