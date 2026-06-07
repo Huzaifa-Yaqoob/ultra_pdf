@@ -2,15 +2,7 @@
   "extends": "@ultra-pdf/typescript-config/tsconfig.next.json",
   "compilerOptions": {
     "paths": {
-      "@/*": ["./*"],
-      "@ui/components": ["../../packages/ui/src/components"],
-      "@ui/components/*": ["../../packages/ui/src/components/*"],
-      "@ui/components/ui/*": ["../../packages/ui/src/components/ui/*"],
-      "@ui/lib": ["../../packages/ui/src/lib"],
-      "@ui/lib/*": ["../../packages/ui/src/lib/*"],
-      "@ui/hooks": ["../../packages/ui/src/hooks"],
-      "@ui/hooks/*": ["../../packages/ui/src/hooks/*"],
-      "@ui/lib/utils": ["../../packages/ui/src/lib/utils.ts"]
+      "@/*": ["./*"]
     }
   },
   "include": [
