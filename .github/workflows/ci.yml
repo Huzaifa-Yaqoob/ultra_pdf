@@ -24,24 +24,14 @@ jobs:
         with:
           bun-version: latest
 
-      # This enables task distribution via Nx Cloud
-      # Run this command as early as possible, before dependencies are installed
-      # Learn more at https://nx.dev/ci/reference/nx-cloud-cli#npx-nxcloud-startcirun
-      - run: bunx nx start-ci-run --distribute-on="3 linux-medium-js" --stop-agents-after="e2e-ci"
-
-      # Cache node_modules
-      - id: bun-cache
-        uses: actions/cache@v4
+      # Cache bun's package download cache (not node_modules — bun workspaces
+      # create per-package node_modules that the root cache wouldn't cover)
+      - uses: actions/cache@v4
         with:
-          path: node_modules
-          key: bun-${{ runner.os }}-${{ hashFiles('bun.lock') }}
+          path: ~/.bun/install/cache
+          key: bun-cache-${{ runner.os }}-${{ hashFiles('bun.lock') }}
 
       - run: bun install --frozen-lockfile
-        if: steps.bun-cache.outputs.cache-hit != 'true'
 
-      # Prepend any command with "nx record --" to record its logs to Nx Cloud
-      - run: bunx nx record -- bunx nx format:check --base="origin/main"
-      - run: bunx nx run-many -t lint test build typecheck e2e-ci
-      # Nx Cloud recommends fixes for failures to help you get CI green faster. Learn more: https://nx.dev/ci/features/self-healing-ci
-      - run: bunx nx fix-ci
-        if: always()
+      - run: bunx nx format:check --base="origin/main"
+      - run: bunx nx run-many -t lint test build typecheck
