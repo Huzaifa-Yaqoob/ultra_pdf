@@ -11,7 +11,8 @@
       "@ui/lib/*": ["../../packages/ui/src/lib/*"],
       "@ui/hooks": ["../../packages/ui/src/hooks"],
       "@ui/hooks/*": ["../../packages/ui/src/hooks/*"],
-      "@ui/lib/utils": ["../../packages/ui/src/lib/utils.ts"]
+      "@ui/lib/utils": ["../../packages/ui/src/lib/utils.ts"],
+      "@ui/assets/*": ["../../packages/ui/src/assets/*"]
     }
   },
   "include": [

@@ -10,7 +10,8 @@
       "@ui/lib/*": ["./src/lib/*"],
       "@ui/hooks": ["./src/hooks"],
       "@ui/hooks/*": ["./src/hooks/*"],
-      "@ui/lib/utils": ["./src/lib/utils.ts"]
+      "@ui/lib/utils": ["./src/lib/utils.ts"],
+      "@ui/assets/*": ["./src/assets/fonts/*"]
     }
   },
   "files": [],
