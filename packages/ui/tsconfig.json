@@ -1,11 +1,5 @@
 {
   "extends": "@ultra-pdf/typescript-config/tsconfig.react.json",
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    }
-  },
   "files": [],
   "include": [],
   "references": [

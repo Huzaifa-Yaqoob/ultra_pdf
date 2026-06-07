@@ -1,5 +1,9 @@
 import { Button } from '@ultra-pdf/ui/components/ui/button';
 
 export default function Home() {
-  return <Button>CLick me</Button>;
+  return (
+    <div className={'bg-primary'}>
+      <Button variant="outline">CLick me</Button>
+    </div>
+  );
 }

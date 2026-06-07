@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
 @import "@ultra-pdf/ui";
 
-@source "../../libs/ui/src/**/*.{ts,tsx}";
+@source "../../../packages/ui/src/**/*.{ts,tsx}";
+
