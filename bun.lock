@@ -88,6 +88,7 @@
         "@types/react": "^19",
         "@types/react-dom": "^19",
         "@ultra-pdf/eslint-config": "workspace:*",
+        "@ultra-pdf/pdf-builder": "workspace:*",
         "@ultra-pdf/prettier-config": "workspace:*",
         "@ultra-pdf/typescript-config": "workspace:*",
         "@ultra-pdf/ui": "workspace:*",
@@ -106,6 +107,16 @@
         "eslint-config-next": ">=16",
         "eslint-plugin-react": ">=7.35",
         "eslint-plugin-react-hooks": ">=5",
+      },
+    },
+    "packages/pdf_builder": {
+      "name": "@ultra-pdf/pdf-builder",
+      "version": "0.0.1",
+      "dependencies": {
+        "react": "^19.0.0",
+      },
+      "devDependencies": {
+        "typescript": "^5.0.0",
       },
     },
     "packages/prettier_config": {
@@ -1258,6 +1269,8 @@
     "@typescript-eslint/visitor-keys": ["@typescript-eslint/visitor-keys@8.60.1", "", { "dependencies": { "@typescript-eslint/types": "8.60.1", "eslint-visitor-keys": "^5.0.0" } }, "sha512-EbGRQg4FhrmwLodl+t3JNAnXHWVr9Vp+Zl1QBZVPY4ByfkzIT8cX3K6QWODHtkIZqqJVEWvhHSx3v5PDHsaQag=="],
 
     "@ultra-pdf/eslint-config": ["@ultra-pdf/eslint-config@workspace:packages/eslint_config"],
+
+    "@ultra-pdf/pdf-builder": ["@ultra-pdf/pdf-builder@workspace:packages/pdf_builder"],
 
     "@ultra-pdf/prettier-config": ["@ultra-pdf/prettier-config@workspace:packages/prettier_config"],
 

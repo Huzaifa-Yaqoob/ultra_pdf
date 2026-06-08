@@ -11,6 +11,9 @@
     },
     {
       "path": "./packages/typescript_config"
+    },
+    {
+      "path": "./packages/pdf_builder"
     }
   ]
 }

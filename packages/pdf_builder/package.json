@@ -1,0 +1,24 @@
+{
+  "name": "@ultra-pdf/pdf-builder",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build:wasm": "wasm-pack build ./native --target bundler --out-dir ../src/wasm",
+    "build:ts": "tsc",
+    "build": "bun run build:wasm && bun run build:ts"
+  },
+  "dependencies": {
+    "react": "^19.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "@ultra-pdf/pdf-builder",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/pdf_builder/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "command": "bun --cwd packages/pdf_builder run build",
+      "outputs": ["{workspaceRoot}/packages/pdf_builder/dist"]
+    }
+  }
+}

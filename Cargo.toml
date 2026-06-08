@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "packages/pdf_builder/native"
+]
+resolver = "2"
