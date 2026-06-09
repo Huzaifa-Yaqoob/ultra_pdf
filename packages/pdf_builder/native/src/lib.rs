@@ -1,3 +1,7 @@
+use wasm_bindgen::prelude::*;
+
+// ⚡ This macro tells wasm-bindgen to export this function to TypeScript
+#[wasm_bindgen]
 pub fn add(left: u64, right: u64) -> u64 {
     left + right
 }
