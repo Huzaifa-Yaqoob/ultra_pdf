@@ -5,7 +5,7 @@
   "projectType": "library",
   "targets": {
     "build": {
-      "command": "bun --cwd packages/pdf_builder run build",
+      "command": "cd packages/pdf_builder && bun run build",
       "outputs": ["{workspaceRoot}/packages/pdf_builder/dist"]
     }
   }

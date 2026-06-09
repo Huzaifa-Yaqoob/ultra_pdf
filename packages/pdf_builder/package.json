@@ -12,8 +12,9 @@
   },
   "scripts": {
     "build:wasm": "wasm-pack build ./native --target bundler --out-dir ../src/wasm",
-    "build:ts": "tsc",
-    "build": "bun run build:wasm && bun run build:ts"
+    "build:ts": "tsc --build",
+    "build:copy-wasm": "cp -r src/wasm dist/wasm",
+    "build": "bun run build:wasm && bun run build:ts && bun run build:copy-wasm"
   },
   "dependencies": {
     "react": "^19.0.0"
